@@ -267,7 +267,7 @@ class TaskConfig:
             self.upDest = (
                 self.upDest
                 or self.user_dict.get("leech_dest")
-                or config_dict["LEECH_DUMP_CHAT"] == -1002247666039:
+                or config_dict["LEECH_DUMP_CHAT"]
             )
             if not isinstance(self.upDest, int):
                 if self.upDest.startswith("b:"):
